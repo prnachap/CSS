@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  margin: 4rem 0;
+  grid-template-columns: 20rem;
+  grid-auto-rows: min-content;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-content {
+  padding: 2rem;
+  border: 2px solid hsl(204, 14%, 93%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: -2px -2px 2px 1px hsl(204, 14%, 93%);
+}
+
+.main-content--lead {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.main-content--sub {
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 1rem;
+}
+
+.main-content p {
+  color: hsl(218, 22%, 67%);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.side-content_sub {
+  background: hsl(179, 62%, 43%);
+  padding: 2rem;
+  border-bottom-left-radius: 0;
+  box-shadow: -2px 2px 2px 1px hsl(204, 14%, 93%);
+}
+
+.side-content_sub h3 {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 1.5rem;
+}
+
+.side-content_sub h1 {
+  font-size: 2.5rem;
+  color: hsl(204, 43%, 93%);
+  padding-bottom: 1rem;
+}
+
+.side-content_sub span {
+  font-size: 1rem;
+  color: rgba(229, 239, 245, 0.5);
+}
+
+.side-content_sub p {
+  color: hsl(204, 43%, 93%);
+}
+
+.side-content_sub .btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background: hsl(71, 73%, 54%);
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+}
+
+.side-content_why {
+  background: rgba(44, 186, 184, 0.9);
+  padding: 2rem 2rem 4rem 2rem;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 2px 2px 2px 1px hsl(204, 43%, 93%);
+}
+
+.side-content_why h3 {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 2.5rem;
+}
+
+.side-content_why p {
+  color: rgba(229, 239, 245, 0.5);
+  padding-right: 3rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(218, 22%, 67%);
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  color: hsl(218, 22%, 67%);
+}
+
+@media screen and (min-width: 50rem) {
+  .container {
+    max-width: 50rem;
+    display: grid;
+    margin: 4rem auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-content {
+    padding: 2rem 2rem 4rem 2rem;
+    grid-column: 1/-1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .side-content_sub {
+    grid-column: 1/2;
+    border-bottom-left-radius: 10px;
+  }
+
+  .side-content_why {
+    grid-column: 2/-1;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+}
